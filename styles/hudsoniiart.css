@@ -12,7 +12,6 @@ body, html
 {
 	background-color: #000000;
 	color: #FFFFFF;
-	opacity: 0.85;
 	
 	display: flex;
 	justify-content: space-evenly;
