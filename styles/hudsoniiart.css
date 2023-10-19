@@ -16,27 +16,78 @@ body, html
 	
 	display: flex;
 	justify-content: space-evenly;
-	position: fixed;
 	width: 100%;
 }
 
-.divheader a
+.currentheader
+{
+	text-decoration-line: underline;
+}
+
+.divheader a, .divfooter a
 {
 	text-decoration: none;
 	color: #FFFFFF;
 }
 
+.divheader a:hover, .divfooter a:hover
+{
+	text-decoration: none;
+	color: #CCCCCC;
+}
+
 .divtitle
 {
 	display: flex;
-	height: 100%;
-	padding-top: 70px;
+	height: 60%;
+	padding: 50px;
 }
 
 .divtitle h1
 {
 	color: #FFFFFF;
-	text-shadow: 3px 3px #000000;
-	font-size: 7em;
-	padding-left: 50px;
+	text-shadow: 4px 4px #000000;
+	font-size: 5em;
+	margin: 0px;
+}
+
+.divinfro
+{
+	display: flex;
+	justify-content: space-evenly;
+	padding: 50px;
+}
+
+.divinfro h1
+{
+	color: #000000;
+	font-size: 5em;
+	margin: 0px;
+}
+
+.divintro img
+{
+	float: right;
+	width: 400px;
+	height: 300px;
+	border-radius: 20px;
+}
+
+.divintro, .divcontent
+{
+	padding: 10px;
+}
+
+.divfooter
+{
+	background-color: #000000;
+	color: #FFFFFF;
+	
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.divfooter ul
+{
+	list-style-type: none;
 }
