@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+html {
+	background: #AAAAAA;
+}
+
+body
+{
+	background: #CCCCCC;
+	border-style: double;
+	width: 65%;
+	margin: auto;
+	padding: 10px;
+	font-family: Arial;
+}
+
+.dices {
+	text-align: center;
+}
+
+#divDi
+{
+	margin: 20px;
+}
+
+.imgDi
+{
+	padding: 5px;
+}
