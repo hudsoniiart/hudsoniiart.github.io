@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+main
+{
+	text-align: center;
+}
+
+.divthumbs div {
+	padding: 25px;
+}

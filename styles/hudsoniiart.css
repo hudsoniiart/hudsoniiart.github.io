@@ -54,7 +54,7 @@ a:visited {
 .divtitle
 {
 	display: flex;
-	height: 50%;
+	height: 25%;
 	padding: 50px;
 }
 
@@ -70,6 +70,7 @@ a:visited {
 {
 	display: flex;
 	justify-content: space-evenly;
+	text-align: center;
 	padding: 50px;
 }
 
@@ -86,7 +87,7 @@ a:visited {
 	float: right;
 	width: 400px;
 	height: 300px;
-	border-radius: 20px;
+	border-radius: 15px;
 }
 
 .divintro, .divcontent
@@ -104,7 +105,7 @@ a:visited {
 .divthumbs figure img
 {
 	width: 300px;
-	border-radius: 20px;
+	border-radius: 15px;
 }
 
 main
