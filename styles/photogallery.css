@@ -1,12 +1,10 @@
 @charset "UTF-8";
 
-main
-{
+main {
 	text-align: center;
 }
 
-img
-{
+img {
 	padding: 5px;
 	width: 75%;
 }
