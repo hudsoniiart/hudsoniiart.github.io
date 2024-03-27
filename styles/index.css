@@ -16,16 +16,3 @@
 	background-size: cover;
 	height: 40%;
 }
-
-main div {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	align-items: center;
-	
-}
-
-main img {
-	width: 400px;
-	padding: 10px;
-}
