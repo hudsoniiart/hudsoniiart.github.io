@@ -32,12 +32,12 @@ body, html
 }
 
 a {
-	color: #222222;
+	color: #333333;
 	text-decoration: none;
 }
 
 a:visited {
-	color: #444444;
+	color: #666666;
 }
 
 a:hover img {
