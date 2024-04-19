@@ -1,13 +1,5 @@
 @charset "UTF-8";
 
-@media only screen and (max-width: 600px) {  
-	.divtitle {
-		display: flex;
-		height: 25%;
-		padding: 50px;
-	}
-}
-
 body, html
 {
 	font-family: "Bahnschrift", Arial;
@@ -24,11 +16,6 @@ body, html
 	display: flex;
 	justify-content: space-evenly;
 	width: 100%;
-}
-
-.currentheader
-{
-	text-decoration-line: underline;
 }
 
 a {
@@ -55,6 +42,11 @@ a:hover img {
 {
 	text-decoration: none;
 	color: #CCCCCC;
+}
+
+.currentheader a
+{
+	color: #8F8F8F;
 }
 
 .divtitle
