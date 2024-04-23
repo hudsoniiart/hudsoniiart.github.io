@@ -4,13 +4,23 @@ main {
 	text-align: center;
 }
 
+figure {
+	margin: 20px 5px 0px 5px;
+}
+
 img {
-	padding: 5px;
-	width: 75%;
+	width: 70%;
 }
 
 p a {
 	text-decoration: none;
+}
+
+p {
+	font-size: 1.25em;
+	display: inline;
+	padding: 0px 10px;
+	margin: 0px 5px 0px 5px;
 }
 
 @media only screen and (max-width: 600px) {
