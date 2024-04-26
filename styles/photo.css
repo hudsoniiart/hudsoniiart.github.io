@@ -1,0 +1,7 @@
+@charset "UTF-8";
+
+.divtitle
+{
+	background: url("../media/headers/photo.jpg") no-repeat center;
+	background-size: cover;
+}

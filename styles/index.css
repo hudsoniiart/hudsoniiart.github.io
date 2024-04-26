@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 .divtitle {
-	background: url("../media/titleimgs/index.JPG") no-repeat center;
+	background: url("../media/headers/index.jpg") no-repeat center;
 	background-size: cover;
 	height: 50%;
 }
