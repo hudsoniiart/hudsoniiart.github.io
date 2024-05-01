@@ -7,12 +7,6 @@
 }
 
 .picturefooter {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	color: #FFFFFF;
-	
-	background: url("../media/infroimgs/hudsoniiart.jpg") no-repeat center;
+	background: url("../media/footers/index.jpg") no-repeat center;
 	background-size: cover;
-	height: 40%;
 }

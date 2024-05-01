@@ -1,7 +1,11 @@
 @charset "UTF-8";
 
-.divtitle
-{
+.divtitle {
 	background: url("../media/headers/canines.jpg") no-repeat center;
+	background-size: cover;
+}
+
+.picturefooter {
+	background: url("../media/footers/canines.jpg") no-repeat center;
 	background-size: cover;
 }

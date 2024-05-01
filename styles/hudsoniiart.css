@@ -8,14 +8,35 @@ body, html
 	padding: 0;
 }
 
-.divheader
-{
+.divheader {
 	background-color: #000000;
 	color: #FFFFFF;
 	
 	display: flex;
 	justify-content: space-evenly;
 	width: 100%;
+}
+
+.divtitle {
+	display: flex;
+	height: 25%;
+	padding: 50px;
+}
+
+.picturefooter {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #FFFFFF;
+	height: 20%;
+}
+
+.divtitle h1
+{
+	color: #FFFFFF;
+	text-shadow: 4px 4px #000000;
+	font-size: 5em;
+	margin: 0px;
 }
 
 a {
@@ -47,21 +68,6 @@ a:hover img {
 .currentheader a
 {
 	color: #8F8F8F;
-}
-
-.divtitle
-{
-	display: flex;
-	height: 25%;
-	padding: 50px;
-}
-
-.divtitle h1
-{
-	color: #FFFFFF;
-	text-shadow: 4px 4px #000000;
-	font-size: 5em;
-	margin: 0px;
 }
 
 .divinfro
