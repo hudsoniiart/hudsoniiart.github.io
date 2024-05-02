@@ -5,3 +5,8 @@
 	background-size: cover;
 	height: 50%;
 }
+
+.picturefooter {
+	background: url("../media/footers/404.jpg") no-repeat center;
+	background-size: cover;
+}
