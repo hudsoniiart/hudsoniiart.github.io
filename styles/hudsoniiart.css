@@ -85,20 +85,6 @@ a:hover img {
 	margin: 0px;
 }
 
-.divintro img
-{
-	padding: 5px;
-	float: right;
-	width: 400px;
-	height: 300px;
-	border-radius: 15px;
-}
-
-.divintro, .divcontent
-{
-	padding: 10px;
-}
-
 .divthumbs
 {
 	display: flex;
@@ -121,6 +107,10 @@ main
 main h2
 {
 	text-align: center;
+}
+
+.divcontent * {
+	text-align: left;
 }
 
 figcaption
