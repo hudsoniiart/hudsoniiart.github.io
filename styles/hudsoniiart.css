@@ -1,7 +1,6 @@
 @charset "UTF-8";
 
-body, html
-{
+body, html {
 	font-family: "Bahnschrift", Arial;
 	height: 100%;
 	margin: 0;
@@ -21,11 +20,22 @@ body, html
     z-index: 99;
 }
 
-.divtitle {
+.divtitle, .pagetitle2 {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	min-height: 100%;
+}
+
+.pagetitle2 {
+	min-height: 50%;
+}
+
+.divtitle h1, .pagetitle2 h1 {
+	color: #FFFFFF;
+	text-shadow: 3px 3px 5px #000000;
+	font-size: 5em;
+	margin: 0px;
 }
 
 .picturefooter {
@@ -34,14 +44,6 @@ body, html
 	align-items: center;
 	text-shadow: 3px 3px 5px #000000;
 	height: 20%;
-}
-
-.divtitle h1
-{
-	color: #FFFFFF;
-	text-shadow: 3px 3px 5px #000000;
-	font-size: 5em;
-	margin: 0px;
 }
 
 a {
@@ -58,25 +60,21 @@ a:hover img {
 	box-shadow: 0px 0px 5px #000000;
 }
 
-.divheader a, .divfooter a, .picturefooter a
-{
+.divheader a, .divfooter a, .picturefooter a {
 	text-decoration: none;
 	color: #FFFFFF;
 }
 
-.divheader a:hover, .divfooter a:hover, .picturefooter a:hover
-{
+.divheader a:hover, .divfooter a:hover, .picturefooter a:hover {
 	text-decoration: none;
 	color: #CCCCCC;
 }
 
-.currentheader a
-{
+.currentheader a {
 	color: #8F8F8F;
 }
 
-.divinfro
-{
+.divinfro {
 	display: flex;
 	justify-content: space-evenly;
 	text-align: center;
@@ -84,34 +82,29 @@ a:hover img {
 	padding-top: 100px;
 }
 
-.divinfro h1
-{
+.divinfro h1 {
 	color: #000000;
 	font-size: 5em;
 	margin: 0px;
 }
 
-.divthumbs
-{
+.divthumbs {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-evenly;
 }
 
-.divthumbs figure img
-{
+.divthumbs figure img {
 	width: 300px;
 	border-radius: 15px;
 }
 
-main
-{
+main {
 	width: 90%;
 	margin: auto;
 }
 
-main h2
-{
+main h2 {
 	text-align: center;
 }
 
@@ -119,21 +112,18 @@ main h2
 	text-align: left;
 }
 
-figcaption
-{
+figcaption {
 	text-align: center;
 }
 
-table, th, td
-{
+table, th, td {
 	border: 1px solid black;
 	border-collapse: collapse;
 	margin: 10px;
 	padding: 5px;
 }
 
-.divfooter
-{
+.divfooter {
 	background-color: #000000;
 	color: #FFFFFF;
 	
@@ -141,7 +131,6 @@ table, th, td
 	justify-content: space-evenly;
 }
 
-.divfooter ul
-{
+.divfooter ul {
 	list-style-type: none;
 }
