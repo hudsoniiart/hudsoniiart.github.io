@@ -30,25 +30,7 @@
 	</header>
 	
 	<main>
-		<ul class="gallery">
-			<li><img src="../media/photo/animals/CAN001.jpg" /></li>
-			<li><img src="../media/photo/animals/CAN004.jpg" /></li>
-			<li><img src="../media/photo/animals/TSQ005.jpg" /></li>
-			<li><img src="../media/photo/animals/WEA001.jpg" /></li>
-			<li><img src="../media/photo/animals/CER001.jpg" /></li>
-			<li><img src="../media/photo/animals/CAN002.jpg" /></li>
-			<li><img src="../media/photo/animals/WEA003.jpg" /></li>
-			<li><img src="../media/photo/animals/TOA001.jpg" /></li>
-			<li><img src="../media/photo/animals/WEA002.jpg" /></li>
-			<li><img src="../media/photo/animals/GSQ002.jpg" /></li>
-			<li><img src="../media/photo/animals/CER004.jpg" /></li>
-			<li><img src="../media/photo/animals/TSQ001.jpg" /></li>
-			<li><img src="../media/photo/animals/TSQ003.jpg" /></li>
-			<li><img src="../media/photo/animals/TSQ004.jpg" /></li>
-			<li><img src="../media/photo/animals/GSQ001.jpg" /></li>
-			<li><img src="../media/photo/animals/GSQ004.jpg" /></li>
-			<li><img src="../media/photo/animals/WEA005.jpg" /></li>
-			<li><img src="../media/photo/animals/CER002.jpg" /></li>
+		<ul id="ulPhotos" class="gallery">
 		</ul>
 	</main>
 	
@@ -69,5 +51,50 @@
 			<li><a href="../casualornithology">Casual Ornithology</a></li>
 		</ul>
 	</footer>
+	
+	<script>
+		let ulPhotos;
+
+		window.addEventListener("load", function() {
+			ulPhotos = document.getElementById("ulPhotos");
+			
+			randomizePhotos();
+		});
+
+		function randomizePhotos() {
+			const srcPhoto = [
+				"CAN001","CAN002","CAN004",
+				"CER001","CER002","CER004",
+				"GSQ001","GSQ002","GSQ004",
+				"TOA001",
+				"TSQ001","TSQ003","TSQ004","TSQ005",
+				"WEA001","WEA002","WEA003","WEA005"
+			];
+			
+			// This is the Fisher-Yates Shuffle algorithm. I used the following resource to understand it.
+			// https://bost.ocks.org/mike/shuffle/
+			var m = srcPhoto.length, t, v, i;
+			while(m) {
+				i = Math.floor(Math.random() * m--);
+				
+				t = srcPhoto[m];
+				
+				srcPhoto[m] = srcPhoto[i];
+				
+				srcPhoto[i] = t;
+			}
+			
+			for(let i = 0; i < srcPhoto.length; i++) {
+				var liPhoto = document.createElement("li");
+				
+				var imgPhoto = document.createElement("img");
+				imgPhoto.src = "../media/photo/animals/" + srcPhoto[i] + ".jpg";
+				
+				liPhoto.appendChild(imgPhoto);
+				
+				ulPhotos.appendChild(liPhoto);
+			}
+		}
+	</script>
 </body>
 </html>

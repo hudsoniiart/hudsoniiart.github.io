@@ -30,6 +30,9 @@
 	</header>
 	
 	<main>
+		<ul id="ulPhotos" class="gallery">
+		</ul>
+		
 		<ul class="gallery">
 			<li><img src="../media/photo/automobiles/BCN001.jpg" /></li>
 			<li><img src="../media/photo/automobiles/AWR005.jpg" /></li>
@@ -66,5 +69,46 @@
 			<li><a href="../casualornithology">Casual Ornithology</a></li>
 		</ul>
 	</footer>
+	
+	<script>
+		let ulPhotos;
+
+		window.addEventListener("load", function() {
+			ulPhotos = document.getElementById("ulPhotos");
+			
+			randomizePhotos();
+		});
+
+		function randomizePhotos() {
+			const srcPhoto = [
+				"BCN001","BCN002","BCN003","BCN004","BCN005",
+				"AWR001","AWR002","AWR003","AWR004","AWR005","AWR006","AWR007","AWR008","AWR009","AWR010",
+			];
+			
+			// This is the Fisher-Yates Shuffle algorithm. I used the following resource to understand it.
+			// https://bost.ocks.org/mike/shuffle/
+			var m = srcPhoto.length, t, v, i;
+			while(m) {
+				i = Math.floor(Math.random() * m--);
+				
+				t = srcPhoto[m];
+				
+				srcPhoto[m] = srcPhoto[i];
+				
+				srcPhoto[i] = t;
+			}
+			
+			for(let i = 0; i < srcPhoto.length; i++) {
+				var liPhoto = document.createElement("li");
+				
+				var imgPhoto = document.createElement("img");
+				imgPhoto.src = "../media/photo/automobiles/" + srcPhoto[i] + ".jpg";
+				
+				liPhoto.appendChild(imgPhoto);
+				
+				ulPhotos.appendChild(liPhoto);
+			}
+		}
+	</script>
 </body>
 </html>
