@@ -112,6 +112,10 @@ main h2 {
 	text-align: left;
 }
 
+.divcontent h1 {
+	border-bottom-style: solid;
+}
+
 figcaption {
 	text-align: center;
 }

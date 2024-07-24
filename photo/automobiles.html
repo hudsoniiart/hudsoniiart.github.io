@@ -32,24 +32,6 @@
 	<main>
 		<ul id="ulPhotos" class="gallery">
 		</ul>
-		
-		<ul class="gallery">
-			<li><img src="../media/photo/automobiles/BCN001.jpg" /></li>
-			<li><img src="../media/photo/automobiles/AWR005.jpg" /></li>
-			<li><img src="../media/photo/automobiles/AWR007.jpg" /></li>
-			<li><img src="../media/photo/automobiles/BCN003.jpg" /></li>
-			<li><img src="../media/photo/automobiles/BCN004.jpg" /></li>
-			<li><img src="../media/photo/automobiles/BCN005.jpg" /></li>
-			<li><img src="../media/photo/automobiles/AWR001.jpg" /></li>
-			<li><img src="../media/photo/automobiles/BCN002.jpg" /></li>
-			<li><img src="../media/photo/automobiles/AWR006.jpg" /></li>
-			<li><img src="../media/photo/automobiles/AWR010.jpg" /></li>
-			<li><img src="../media/photo/automobiles/AWR002.jpg" /></li>
-			<li><img src="../media/photo/automobiles/AWR003.jpg" /></li>
-			<li><img src="../media/photo/automobiles/AWR004.jpg" /></li>
-			<li><img src="../media/photo/automobiles/AWR008.jpg" /></li>
-			<li><img src="../media/photo/automobiles/AWR009.jpg" /></li>
-		</ul>
 	</main>
 	
 	<footer class="picturefooter">
@@ -82,7 +64,7 @@
 		function randomizePhotos() {
 			const srcPhoto = [
 				"BCN001","BCN002","BCN003","BCN004","BCN005",
-				"AWR001","AWR002","AWR003","AWR004","AWR005","AWR006","AWR007","AWR008","AWR009","AWR010",
+				"AWR001","AWR002","AWR003","AWR004","AWR005","AWR006","AWR007","AWR008","AWR009","AWR010"
 			];
 			
 			// This is the Fisher-Yates Shuffle algorithm. I used the following resource to understand it.
@@ -90,11 +72,9 @@
 			var m = srcPhoto.length, t, v, i;
 			while(m) {
 				i = Math.floor(Math.random() * m--);
-				
 				t = srcPhoto[m];
 				
 				srcPhoto[m] = srcPhoto[i];
-				
 				srcPhoto[i] = t;
 			}
 			
@@ -105,7 +85,6 @@
 				imgPhoto.src = "../media/photo/automobiles/" + srcPhoto[i] + ".jpg";
 				
 				liPhoto.appendChild(imgPhoto);
-				
 				ulPhotos.appendChild(liPhoto);
 			}
 		}
