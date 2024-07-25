@@ -2,17 +2,17 @@
 <html>
 <header>
 	<link rel="icon" type="image/png" sizes="16x16" href="../media/favicon/favicon.png">
-	<title>Dogs | Hudsonii Art</title>
+	<title>Landscapes - Photography | Hudsonii Art</title>
 	<link rel="stylesheet" type="text/css" href="../styles/hudsoniiart.css" />
 	<link rel="stylesheet" type="text/css" href="../styles/gallery.css" />
 	<style>
 		.pagetitle2 {
-			background: url("../media/canines/dogs/FDG003.jpg") no-repeat center;
+			background: url("../media/photo/landscapes/FIE001.jpg") no-repeat center;
 			background-size: cover;
 		}
 		
 		.picturefooter {
-			background: url("../media/canines/dogs/HAZ002.jpg") no-repeat center;
+			background: url("../media/photo/landscapes/AFF005.jpg") no-repeat center;
 			background-size: cover;
 		}
 	</style>
@@ -20,13 +20,13 @@
 <body>
 	<div class="divheader">
 		<h1><a href="../">HUDSONII ART</a></h1>
-		<h1><a href="../photo">PHOTOGRAPHY</a></h1>
-		<h1 class="currentheader"><a href="../canines">CANINES & CO</a></h1>
+		<h1 class="currentheader"><a href="../photo">PHOTOGRAPHY</a></h1>
+		<h1><a href="../canines">CANINES & CO</a></h1>
 		<h1><a href="../video">VIDEOGRAPHY</a></h1>
 	</div>
 	
 	<header class="pagetitle2">
-		<h1>Dogs</h1>
+		<h1>Landscapes</h1>
 	</header>
 	
 	<main>
@@ -35,7 +35,7 @@
 	</main>
 	
 	<footer class="picturefooter">
-		<h1><a href="../canines">CANINES & CO</a></h1>
+		<h1><a href="../photo">PHOTOGRAPHY</a></h1>
 	</footer>
 	
 	<footer class="divfooter">
@@ -63,8 +63,9 @@
 
 		function randomizePhotos() {
 			const srcPhoto = [
-				"FDG001","FDG002","FDG003","FDG004","FDG005",
-				"HAZ001","HAZ002","HAZ003","HAZ004","HAZ005"
+				"AFF001","AFF002","AFF003","AFF005",
+				"AUR001","AUR002","AUR003","AUR004","AUR005",
+				"FIE001"
 			];
 			
 			// This is the Fisher-Yates Shuffle algorithm. I used the following resource to understand it.
@@ -82,7 +83,7 @@
 				var liPhoto = document.createElement("li");
 				
 				var imgPhoto = document.createElement("img");
-				imgPhoto.src = "../media/canines/dogs/" + srcPhoto[i] + ".jpg";
+				imgPhoto.src = "../media/photo/landscapes/" + srcPhoto[i] + ".jpg";
 				
 				liPhoto.appendChild(imgPhoto);
 				ulPhotos.appendChild(liPhoto);

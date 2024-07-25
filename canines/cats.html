@@ -4,8 +4,13 @@
 	<link rel="icon" type="image/png" sizes="16x16" href="../media/favicon/favicon.png">
 	<title>Cats | Hudsonii Art</title>
 	<link rel="stylesheet" type="text/css" href="../styles/hudsoniiart.css" />
-	<link rel="stylesheet" type="text/css" href="../styles/videogallery.css" />
+	<link rel="stylesheet" type="text/css" href="../styles/gallery.css" />
 	<style>
+		.pagetitle2 {
+			background: url("../media/canines/cats/VAN004.jpg") no-repeat center;
+			background-size: cover;
+		}
+		
 		.picturefooter {
 			background: url("../media/canines/cats/VAN009.jpg") no-repeat center;
 			background-size: cover;
@@ -20,26 +25,17 @@
 		<h1><a href="../video">VIDEOGRAPHY</a></h1>
 	</div>
 	
-	<header class="divinfro">
+	<header class="pagetitle2">
 		<h1>Cats</h1>
 	</header>
 	
 	<main>
-		<h2>Friendly & Familiar Cats</h2>
-		<section class="divthumbs">
-			<figure>
-				<a href="cats/namivivi"><img src="../media/canines/cats/VAN001.jpg" /></a>
-				<figcaption>Nami & Vivi</figcaption>
-			</figure>
-			<figure>
-				<a href="cats/familycats"><img src="../media/canines/cats/FCT001.jpg" /></a>
-				<figcaption>Family Cats</figcaption>
-			</figure>
-		</section>
+		<ul id="ulPhotos" class="gallery">
+		</ul>
 	</main>
 	
 	<footer class="picturefooter">
-		<h1><a href="../canines">Canines & Co</a></h1>
+		<h1><a href="../canines">CANINES & CO</a></h1>
 	</footer>
 	
 	<footer class="divfooter">
@@ -55,5 +51,43 @@
 			<li><a href="../casualornithology">Casual Ornithology</a></li>
 		</ul>
 	</footer>
+	
+	<script>
+		let ulPhotos;
+
+		window.addEventListener("load", function() {
+			ulPhotos = document.getElementById("ulPhotos");
+			
+			randomizePhotos();
+		});
+
+		function randomizePhotos() {
+			const srcPhoto = [
+				"FCT001","FCT002","FCT003","FCT004","FCT005",
+				"VAN001","VAN002","VAN003","VAN004","VAN005","VAN006","VAN007","VAN008","VAN009","VAN010"
+			];
+			
+			// This is the Fisher-Yates Shuffle algorithm. I used the following resource to understand it.
+			// https://bost.ocks.org/mike/shuffle/
+			var m = srcPhoto.length, t, v, i;
+			while(m) {
+				i = Math.floor(Math.random() * m--);
+				t = srcPhoto[m];
+				
+				srcPhoto[m] = srcPhoto[i];
+				srcPhoto[i] = t;
+			}
+			
+			for(let i = 0; i < srcPhoto.length; i++) {
+				var liPhoto = document.createElement("li");
+				
+				var imgPhoto = document.createElement("img");
+				imgPhoto.src = "../media/canines/cats/" + srcPhoto[i] + ".jpg";
+				
+				liPhoto.appendChild(imgPhoto);
+				ulPhotos.appendChild(liPhoto);
+			}
+		}
+	</script>
 </body>
 </html>
