@@ -10,6 +10,7 @@
 			background: url("../media/photo/camp/2312A02.jpg") no-repeat center;
 			background-size: cover;
 		}
+		
 		.picturefooter {
 			background: url("../media/photo/camp/2309B05.jpg") no-repeat center;
 			background-size: cover;
@@ -78,11 +79,9 @@
 			var m = srcPhoto.length, t, v, i;
 			while(m) {
 				i = Math.floor(Math.random() * m--);
-				
 				t = srcPhoto[m];
 				
 				srcPhoto[m] = srcPhoto[i];
-				
 				srcPhoto[i] = t;
 			}
 			
@@ -93,9 +92,10 @@
 				imgPhoto.src = "../media/photo/camp/" + srcPhoto[i] + ".jpg";
 				
 				liPhoto.appendChild(imgPhoto);
-				
 				ulPhotos.appendChild(liPhoto);
 			}
+			
+			ulPhotos.appendChild(document.createElement("li"));
 		}
 	</script>
 </body>

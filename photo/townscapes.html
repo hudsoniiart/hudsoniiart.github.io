@@ -76,11 +76,9 @@
 			var m = srcPhoto.length, t, v, i;
 			while(m) {
 				i = Math.floor(Math.random() * m--);
-				
 				t = srcPhoto[m];
 				
 				srcPhoto[m] = srcPhoto[i];
-				
 				srcPhoto[i] = t;
 			}
 			
@@ -91,9 +89,10 @@
 				imgPhoto.src = "../media/photo/townscapes/" + srcPhoto[i] + ".jpg";
 				
 				liPhoto.appendChild(imgPhoto);
-				
 				ulPhotos.appendChild(liPhoto);
 			}
+			
+			ulPhotos.appendChild(document.createElement("li"));
 		}
 	</script>
 </body>
