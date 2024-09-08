@@ -9,3 +9,8 @@
 	background: url("../media/footers/video.jpg") no-repeat center;
 	background-size: cover;
 }
+
+.picturemiddle {
+	background: url("../media/photo/camp/2309B07.jpg") no-repeat center;
+	background-size: cover;
+}
