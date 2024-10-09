@@ -125,6 +125,11 @@ main h2 {
 	text-align: center;
 }
 
+.divcontent {
+	width: 75%;
+	margin: auto;
+}
+
 .divcontent * {
 	text-align: left;
 }
