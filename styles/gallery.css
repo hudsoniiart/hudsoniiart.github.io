@@ -6,51 +6,53 @@
 	display: flex;
 	flex-wrap: wrap;
 	list-style-type: none;
-	align-content: center;
+	margin: 0;
+	padding: 0;
 }
 
 .gallery li {
-	height: 40vh;
+	height: 30vh;
 	flex-grow: 1;
-	padding: 2px;
 }
 
-.gallery li img {
+.gallery li:last-child {
+	flex-grow: 10;
+}	
+
+img {
 	max-height: 100%;
 	min-width: 100%;
 	object-fit: cover;
 	vertical-align: bottom;
 }
 
-.gallery li:last-child {
-	flex-grow: 10;
-}
-
+/* Portrait. */
 @media (max-aspect-ratio: 1/1) {
-	.gallery li {
-		height: 30vh;
-	}
+  li {
+    height: 20vh;
+  }
 }
 
+/* Shorter screens. */
 @media (max-height: 480px) {
-	.gallery li {
-		height: 80vh;
-	}
+  li {
+    height: 60vh;
+  }
 }
 
+/* Smaller screens in portrait. */
 @media (max-aspect-ratio: 1/1) and (max-width: 480px) {
-	.gallery {
-		flex-direction: row;
-	}
+  ul {
+    flex-direction: row;
+  }
 
-	.gallery li {
-		height: auto;
-		width: 100%;
-	}
-
-	.gallery li img {
-		width: 100%;
-		max-height: 75vh;
-		min-width: 0;
-	}
+  li {
+    height: auto;
+    width: 100%;
+  }
+  img {
+    width: 100%;
+    max-height: 50vh;
+    min-width: 0;
+  }
 }

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="icon" type="image/png" sizes="16x16" href="media/favicon/favicon.png">
+	<title>Updates | Hudsonii Art</title>
+	<link rel="stylesheet" type="text/css" href="styles/hudsoniiart.css" />
+	<style>
+		.maingrid {
+			grid-template-columns: 1fr 1fr 1fr;
+			grid-template-rows: 50% 1fr 15%;
+		}
+		
+		.gridheader {
+			grid-column: 1 / 4;
+			grid-row: 1 / 2;
+			
+			background: url("media/photo/assorted/WPG002.jpg") no-repeat center;
+			background-size: cover;
+		}
+		
+		.gridlinkwcgtv {
+			grid-column: 1 / 2;
+			grid-row: 2 / 3;
+			
+			background: url("media/updates/wcgtv.jpg") no-repeat center;
+			background-size: cover;
+		}
+		
+		.gridlinkgear {
+			grid-column: 2 / 3;
+			grid-row: 2 / 3;
+			
+			background: url("media/updates/gear.jpg") no-repeat center;
+			background-size: cover;
+		}
+		
+		.gridlinknaturalists {
+			grid-column: 3 / 4;
+			grid-row: 2 / 3;
+			
+			background: url("media/updates/naturalists.jpg") no-repeat center;
+			background-size: cover;
+		}
+
+		.gridfooter {
+			grid-column: 1 / 4;
+			grid-row: 3;
+			
+			background: url("media/photo/camp/2308A01.jpg") no-repeat center;
+			background-size: cover;
+		}
+	</style>
+</head>
+<body>
+	<div class="maingrid">
+		<div class="divheader">
+			<h1><a href="/">hudsonii art</a></h1>
+			<h1><a href="photo">photography</a></h1>
+			<h1><a href="video">videography</a></h1>
+		</div>
+		
+			<header class="gridcell gridheader">
+			<h1>UPDATES</h1>
+		</header>
+		
+		<div class="gridcell gridlinkwcgtv">
+			<h1><a href="updates/wcgtv">WCGtv</a></h1>
+		</div>
+		
+		<div class="gridcell gridlinkgear">
+			<h1><a href="updates/gear">my gear</a></h1>
+		</div>
+		
+		<div class="gridcell gridlinknaturalists">
+			<h1><a href="updates/westmannaturalists">westman naturalists</a></h1>
+		</div>
+		
+		<footer class="gridcell gridfooter">
+			<div class="divfooter">
+				<h1><a href="about">about</a></h1>
+				<h1><a href="updates">updates</a></h1>
+				<h1><a href="https://youtube.com/@hudsoniiart">youtube</a></h1>
+			</div>
+		</footer>
+	</div>
+</body>
+</html>

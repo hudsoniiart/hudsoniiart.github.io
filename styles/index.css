@@ -1,11 +1,46 @@
 @charset "UTF-8";
 
-.divtitle {
+.maingrid {
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 75% 35% 35% 15%;
+}
+
+.gridheader {
+	grid-column: 1 / 3;
+	grid-row: 1 / 2;
+	
 	background: url("../media/headers/index.jpg") no-repeat center;
 	background-size: cover;
 }
 
-.picturefooter {
+.gridlinkphoto {
+	grid-column: 1 / 2;
+	grid-row: 2 / 3;
+	
+	background: url("../media/photo/birds/2418.jpg") no-repeat center;
+	background-size: cover;
+}
+
+.gridlinkvideo {
+	grid-column: 2 / 3;
+	grid-row: 2;
+	
+	background: url("../media/photo/townscapes/TGS010.jpg") no-repeat center;
+	background-size: cover;
+}
+
+.gridyoutube {
+	grid-column: 1 / 3;
+	grid-row: 3;
+	
 	background: url("../media/footers/index.jpg") no-repeat center;
+	background-size: cover;
+}
+
+.gridfooter {
+	grid-column: 1 / 3;
+	grid-row: 4;
+	
+	background: url("../media/photo/automobiles/AWR002.jpg") no-repeat center;
 	background-size: cover;
 }

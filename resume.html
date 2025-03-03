@@ -5,30 +5,49 @@
 	<title>Resume | Hudsonii Art</title>
 	<link rel="stylesheet" type="text/css" href="styles/hudsoniiart.css" />
 	<style>
-		.pagetitle2 {
-			background: url("media/photo/townscapes/FOR002.jpg") no-repeat center;
+		.maingrid {
+			grid-template-columns: 1fr 1fr;
+			grid-template-rows: 50% 1fr 15%;
+		}
+		
+		.gridheader {
+			grid-column: 1 / 3;
+			grid-row: 1 / 2;
+			
+			background: url("media/photo/assorted/FOR002.jpg") no-repeat center;
 			background-size: cover;
 		}
 		
-		.picturefooter {
+		.gridcontent {
+			grid-column: 1 / 3;
+			grid-row: 2 / 3;
+			
+			width: 75%;
+			margin: auto;
+		}
+
+		.gridfooter {
+			grid-column: 1 / 3;
+			grid-row: 3;
+			
 			background: url("media/photo/camp/2405B03.jpg") no-repeat center;
 			background-size: cover;
 		}
 	</style>
 </head>
 <body>
-	<div class="divheader">
-		<h1><a href="/">hudsonii art</a></h1>
-		<h1><a href="photo">photography</a></h1>
-		<h1><a href="video">videography</a></h1>
-	</div>
-	
-	<header class="pagetitle2">
-		<h1>CARSON KEARNS - RESUME</h1>
-	</header>
-	
-	<main>
-		<div class="divcontent">
+	<div class="maingrid">
+		<div class="divheader">
+			<h1><a href="/">hudsonii art</a></h1>
+			<h1><a href="photo">photography</a></h1>
+			<h1><a href="video">videography</a></h1>
+		</div>
+		
+		<header class="gridcell gridheader">
+			<h1>CARSON KEARNS - RESUME</h1>
+		</header>
+		
+		<main class="gridcontent">
 			<h1>Work Experience</h1>
 			
 			<h2 class="topheader">Mobile Production Assistant</h2>
@@ -104,25 +123,15 @@
 			<p>The information above can also be found on <a href="https://www.linkedin.com/in/carsonkearns/">LinkedIn</a>.</p>
 			
 			<p>Updated 3 December, 2024.</p>
-		</div>
-	</main>
-	
-	<footer class="picturefooter">
-		<h1><a href="/">hudsonii art</a></h1>
-	</footer>
-	
-	<footer class="divfooter">
-		<ul>
-			<li><a href="about">About</a></li>
-			<li><a href="gear">Gear</a></li>
-			<li><a href="blog">Blog</a></li>
-			<li><a href="contact">Contact</a></li>
-		</ul>
+		</main>
 		
-		<ul>
-			<li><a href="https://youtube.com/@hudsoniiart">YouTube</a></li>
-			<li><a href="casualornithology">Casual Ornithology</a></li>
-		</ul>
-	</footer>
+		<footer class="gridcell gridfooter">
+			<div class="divfooter">
+				<h1><a href="about">about</a></h1>
+				<h1><a href="updates">updates</a></h1>
+				<h1><a href="https://youtube.com/@hudsoniiart">youtube</a></h1>
+			</div>
+		</footer>
+	</div>
 </body>
 </html>

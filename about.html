@@ -5,62 +5,81 @@
 	<title>About | Hudsonii Art</title>
 	<link rel="stylesheet" type="text/css" href="styles/hudsoniiart.css" />
 	<style>
-		.pagetitle2 {
-			background: url("media/photo/townscapes/TGS008.jpg") no-repeat center;
+		.maingrid {
+			grid-template-columns: 1fr 1fr;
+			grid-template-rows: 50% 1fr 15%;
+		}
+		
+		.gridheader {
+			grid-column: 1 / 3;
+			grid-row: 1 / 2;
+			
+			background: url("media/photo/assorted/TGS008.jpg") no-repeat center;
 			background-size: cover;
 		}
 		
-		.picturefooter {
-			background: url("media/photo/townscapes/TGS002.jpg") no-repeat center;
+		.gridcontent {
+			grid-column: 1 / 3;
+			grid-row: 2 / 3;
+			
+			width: 75%;
+			margin: auto;
+		}
+
+		.gridfooter {
+			grid-column: 1 / 3;
+			grid-row: 3;
+			
+			background: url("media/photo/assorted/TGS002.jpg") no-repeat center;
 			background-size: cover;
 		}
 	</style>
 </head>
 <body>
-	<div class="divheader">
-		<h1><a href="/">hudsonii art</a></h1>
-		<h1><a href="photo">photography</a></h1>
-		<h1><a href="video">videography</a></h1>
-	</div>
-	
-	<header class="pagetitle2">
-		<h1>ABOUT</h1>
-	</header>
-	
-	<main>
-		<div class="divcontent">
+	<div class="maingrid">
+		<div class="divheader">
+			<h1><a href="/">hudsonii art</a></h1>
+			<h1><a href="photo">photography</a></h1>
+			<h1><a href="video">videography</a></h1>
+		</div>
+		
+		<header class="gridcell gridheader">
+			<h1>ABOUT</h1>
+		</header>
+		
+		<main class="gridcontent">
 			<p>I'm working on the working on.</p>
 			
 			<p>Hudsonii Art is a personal project for showcasing various things I've done. Primarily photography and videography.</p>
 			
 			<p>When not taking photos of things, I'm editing/sorting photos of things. I volunteer with <a href="https://westman-naturalists.github.io/">Westman Naturalists</a>, a nature group based in Brandon, and create most of their posts on <a href="https://www.instagram.com/westmannaturalists/">IG</a>/<a href="https://www.facebook.com/westman.naturalists">FB</a>. I also assist with the group newsletter and occasionally lead outings.</p>
 			
-			<p>The <a href="https://importantbirdareasmb.ca/">Manitoba IBA Program</a> hosts bird blitzes and other outings across Manitoba. I'm a member of the <a href="http://brandoncameraclub.ca/">Brandon Camera Club</a>, which is a great group for learning about cameras from photographers with years of experience. Other groups to check out in Brandon include the <a href="https://www.assiniboinefoodforest.com/">Assiniboine Food Forest</a> and the <a href="https://www.westmanwildernessclub.ca/">Westman Wilderness Club</a>.</p>
+			<p>I like to partake in bird counts/blitzes organized by the <a href="https://importantbirdareasmb.ca/">Manitoba IBA Program</a>. I'm a member of the <a href="http://brandoncameraclub.ca/">Brandon Camera Club</a>, which is a great group for learning about cameras from other photographers with years of experience. Other groups to check out in Brandon include the <a href="https://www.assiniboinefoodforest.com/">Assiniboine Food Forest Initiative</a> and the <a href="https://www.westmanwildernessclub.ca/">Westman Wilderness Club</a>.</p>
 			
 			<p>This is a logo. Created on 17 July, 2024.</p>
 			
 			<img src="media/favicon/favicon.png" />
 			
 			<p>Oh, and my name is Carson.</p>
-		</div>
-	</main>
-	
-	<footer class="picturefooter">
-		<h1><a href="/">hudsonii art</a></h1>
-	</footer>
-	
-	<footer class="divfooter">
-		<ul>
-			<li><a href="about">About</a></li>
-			<li><a href="gear">Gear</a></li>
-			<li><a href="blog">Blog</a></li>
-			<li><a href="contact">Contact</a></li>
-		</ul>
+			
+			<h2>Contact</h2>
+			
+			<p>Get in touch with me here or there.</p>
+			
+			<h2>Social Media</h2>
+			
+			<p>Videos are on <a href="https://youtube.com/@hudsoniiart">YouTube</a>. Nature observations on <a href="https://ebird.org/profile/MTU1MDg5OA/">eBird</a> and <a href="https://inaturalist.ca/people/5473037">iNaturalist</a>.</p>
+			
+			<p>Alternative video hosting on <a href="https://vimeo.com/hudsoniiart">Vimeo</a>.</p>
+		</main>
 		
-		<ul>
-			<li><a href="https://youtube.com/@hudsoniiart">YouTube</a></li>
-			<li><a href="casualornithology">Casual Ornithology</a></li>
-		</ul>
-	</footer>
+		<footer class="gridcell gridfooter">
+			<div class="divfooter">
+				<h1 class="currentheader"><a href="about">about</a></h1>
+				<h1><a href="updates">updates</a></h1>
+				<h1><a href="https://youtube.com/@hudsoniiart">youtube</a></h1>
+			</div>
+		</footer>
+	</div>
 </body>
 </html>

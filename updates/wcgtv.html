@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="icon" type="image/png" sizes="16x16" href="media/favicon/favicon.png">
+	<title>WCGtv | Hudsonii Art</title>
+	<link rel="stylesheet" type="text/css" href="../styles/hudsoniiart.css" />
+	<style>
+		.maingrid {
+			grid-template-columns: 1fr 1fr;
+			grid-template-rows: 50% 1fr 15%;
+		}
+		
+		.gridheader {
+			grid-column: 1 / 3;
+			grid-row: 1 / 2;
+			
+			background: url("../media/photo/assorted/BCN003.jpg") no-repeat center;
+			background-size: cover;
+		}
+		
+		.gridcontent {
+			grid-column: 1 / 3;
+			grid-row: 2 / 3;
+			
+			width: 75%;
+			margin: auto;
+		}
+
+		.gridfooter {
+			grid-column: 1 / 3;
+			grid-row: 3;
+			
+			background: url("../media/photo/assorted/TGS010.jpg") no-repeat center;
+			background-size: cover;
+		}
+	</style>
+</head>
+<body>
+	<div class="maingrid">
+		<div class="divheader">
+			<h1><a href="/">hudsonii art</a></h1>
+			<h1><a href="photo">photography</a></h1>
+			<h1><a href="video">videography</a></h1>
+		</div>
+		
+		<header class="gridcell gridheader">
+			<h1>WCGtv</h1>
+		</header>
+		
+		<main class="gridcontent">
+			<p>I've been working at Westman Communications Group since October 2024. I started as a volunteer in April 2024.</p>
+		</main>
+		
+		<footer class="gridcell gridfooter">
+			<div class="divfooter">
+				<h1 class="currentheader"><a href="about">about</a></h1>
+				<h1><a href="updates">updates</a></h1>
+				<h1><a href="https://youtube.com/@hudsoniiart">youtube</a></h1>
+			</div>
+		</footer>
+</body>
+</html>
