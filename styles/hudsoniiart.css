@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 body, html {
-	font-family: "Bahnschrift", Arial;
+	font-family: Bahnschrift, Arial;
 	height: 100%;
 	margin: 0;
 	padding: 0;
@@ -54,6 +54,10 @@ a {
 
 a:visited {
 	color: #666666;
+}
+
+h1 a {
+	font-weight: normal;
 }
 
 .divheader a, .divfooter a, .picturefooter a, .gridcell a {
