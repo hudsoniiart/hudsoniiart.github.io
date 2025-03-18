@@ -8,7 +8,7 @@
 	<style>
 		.maingrid {
 			grid-template-columns: 1fr 1fr;
-			grid-template-rows: 50% 1fr 25% 15%;
+			grid-template-rows: 50% 1fr 15%;
 		}
 		
 		.gridheader {
@@ -24,19 +24,11 @@
 			grid-row: 2 / 3;
 		}
 		
-		.gridlinkback {
+		.gridfooter {
 			grid-column: 1 / 3;
 			grid-row: 3;
 			
-			background: url("../media/photo/canines/HAZ002.jpg") no-repeat center;
-			background-size: cover;
-		}
-		
-		.gridfooter {
-			grid-column: 1 / 3;
-			grid-row: 4;
-			
-			background: url("../media/photo/canines/HAZ002.jpg") no-repeat center;
+			background: url("../media/photo/canines/FCT003.jpg") no-repeat center;
 			background-size: cover;
 		}
 	</style>
@@ -58,15 +50,11 @@
 			</ul>
 		</main>
 		
-		<footer class="gridcell gridlinkback">
-			<h1><a href="../photo">PHOTOGRAPHY</a></h1>
-		</footer>
-		
 		<footer class="gridcell gridfooter">
 			<div class="divfooter">
 				<h1><a href="../about">ABOUT</a></h1>
 				<h1><a href="../updates">UPDATES</a></h1>
-				<h1><a href="https://youtube.com/@hudsoniiart">YOUTUBE</a></h1>
+			<h1><a href="../photo">PHOTOGRAPHY</a></h1>
 			</div>
 		</footer>
 	</div>
@@ -83,9 +71,9 @@
 		function randomizePhotos() {
 			const srcPhoto = [
 				"FDG001","FDG002","FDG003","FDG004","FDG005",
-				"HAZ001","HAZ002","HAZ003","HAZ004","HAZ005",
+				"HAZ001","HAZ003","HAZ004","HAZ005",
 				"FCT001","FCT002","FCT003","FCT004","FCT005",
-				"VAN001","VAN002","VAN003","VAN004","VAN005","VAN006","VAN007","VAN008","VAN009","VAN010",
+				"VAN001","VAN002","VAN003","VAN005","VAN006","VAN007","VAN008","VAN009","VAN010",
 				"COW001","COW002","COW003","COW004","COW005",
 				"LLA001"
 			];

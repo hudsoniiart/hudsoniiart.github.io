@@ -8,7 +8,7 @@
 	<style>
 		.maingrid {
 			grid-template-columns: 1fr 1fr;
-			grid-template-rows: 50% 1fr 25% 15%;
+			grid-template-rows: 50% 1fr 15%;
 		}
 		
 		.gridheader {
@@ -24,17 +24,9 @@
 			grid-row: 2 / 3;
 		}
 		
-		.gridlinkback {
-			grid-column: 1 / 3;
-			grid-row: 3;
-			
-			background: url("../media/photo/assorted/BCN003.jpg") no-repeat center;
-			background-size: cover;
-		}
-		
 		.gridfooter {
 			grid-column: 1 / 3;
-			grid-row: 4;
+			grid-row: 3;
 			
 			background: url("../media/photo/assorted/BCN003.jpg") no-repeat center;
 			background-size: cover;
@@ -58,15 +50,11 @@
 			</ul>
 		</main>
 		
-		<footer class="gridcell gridlinkback">
-			<h1><a href="../photo">PHOTOGRAPHY</a></h1>
-		</footer>
-		
 		<footer class="gridcell gridfooter">
 			<div class="divfooter">
 				<h1><a href="../about">ABOUT</a></h1>
 				<h1><a href="../updates">UPDATES</a></h1>
-				<h1><a href="https://youtube.com/@hudsoniiart">YOUTUBE</a></h1>
+			<h1><a href="../photo">PHOTOGRAPHY</a></h1>
 			</div>
 		</footer>
 	</div>
@@ -82,18 +70,17 @@
 
 		function randomizePhotos() {
 			const srcPhoto = [
-				"BCN001","BCN002","BCN003","BCN004","BCN005",
-				"AWR001","AWR002","AWR003","AWR004","AWR005","AWR006","AWR007","AWR008","AWR009","AWR010",
-				"AFF001","AFF002","AFF003","AFF005",
-				"AUR001","AUR002","AUR003","AUR004","AUR005",
-				"FIE001",
-				"2310A01","2310A02","2310A03","2310A04","2310A05","2310A06","2310A07","2310A08","2310A09","2310A10",
-				"BRA001","BRA002","BRA004",
-				"CSI001","CSI002","CSI003","CSI004","CSI005","CSI006","CSI007","CSI008","CSI009","CSI010",
+				"BCN001","BCN002","BCN003","BCN004",
+				"AWR001","AWR002","AWR004","AWR005","AWR006","AWR007","AWR008","AWR009","AWR010",
+				"AFF001","AFF002","AFF003",
+				"AUR001","AUR003","AUR004","AUR005",
+				"2310A01","2310A02","2310A03","2310A04","2310A06","2310A07","2310A08","2310A09","2310A10",
+				"BRA001","BRA002",
+				"CSI001","CSI003","CSI004","CSI005","CSI006","CSI009","CSI010",
 				"FOR001","FOR002","FOR003","FOR004",
-				"KEN001","KEN002","KEN003","KEN005",
-				"TGS001","TGS002","TGS003","TGS004","TGS005","TGS006","TGS007","TGS008","TGS009","TGS010",
-				"WPG001","WPG002","WPG003","WPG004","WPG005","WPG006","WPG007","WPG008","WPG009","WPG010"
+				"KEN002","KEN003","KEN005",
+				"TGS001","TGS002","TGS003","TGS004","TGS005","TGS007","TGS008","TGS009","TGS010",
+				"WPG001","WPG002","WPG003","WPG004","WPG006"
 			];
 			
 			// This is the Fisher-Yates Shuffle algorithm. I used the following resource to understand it.
