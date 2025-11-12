@@ -2,61 +2,21 @@
 <html>
 <header>
 	<link rel="icon" type="image/png" sizes="16x16" href="../media/favicon/favicon.png">
-	<title>Birds - Photography | Hudsonii Art</title>
+	<title>Birds - Hudsonii Art</title>
 	<link rel="stylesheet" type="text/css" href="../styles/hudsoniiart.css" />
 	<link rel="stylesheet" type="text/css" href="../styles/gallery.css" />
 	<style>
-		.maingrid {
-			grid-template-columns: 1fr 1fr;
-			grid-template-rows: 50% 1fr 15%;
-		}
-		
-		.gridheader {
-			grid-column: 1 / 3;
-			grid-row: 1 / 2;
-			
-			background: url("../media/photo/birds/2438.jpg") no-repeat center;
-			background-size: cover;
-		}
-		
-		.gridcontent {
-			grid-column: 1 / 3;
-			grid-row: 2 / 3;
-		}
-		
-		.gridfooter {
-			grid-column: 1 / 3;
-			grid-row: 3;
-			
-			background: url("../media/photo/birds/2429.jpg") no-repeat center;
+		.landpage {
+			background: url("../media/headers/birds.jpg") no-repeat center;
 			background-size: cover;
 		}
 	</style>
 </header>
 <body>
-	<div class="maingrid">
-		<div class="divheader">
-			<h1><a href="../">HUDSONII ART</a></h1>
-			<h1 class="currentheader"><a href="../photo">PHOTOGRAPHY</a></h1>
-			<h1><a href="../video">VIDEOGRAPHY</a></h1>
-		</div>
-		
-		<header class="gridcell gridheader">
-			<h1>BIRDS</h1>
+	<div class="landpage">
+		<header>
+			<h1><a href="/">hudsonii art</a> &nbsp; &nbsp; next photo</h1>
 		</header>
-		
-		<main class="gridcontent">
-			<ul id="ulPhotos" class="gallery">
-			</ul>
-		</main>
-		
-		<footer class="gridcell gridfooter">
-			<div class="divfooter">
-				<h1><a href="../about">ABOUT</a></h1>
-				<h1><a href="../updates">UPDATES</a></h1>
-			<h1><a href="../photo">PHOTOGRAPHY</a></h1>
-			</div>
-		</footer>
 	</div>
 	
 	<script>

@@ -2,70 +2,15 @@
 <html>
 <head>
 	<link rel="icon" type="image/png" sizes="16x16" href="media/favicon/favicon.png">
-	<title>Videography | Hudsonii Art</title>
+	<title>Videography - Hudsonii Art</title>
 	<link rel="stylesheet" type="text/css" href="styles/hudsoniiart.css" />
 	<link rel="stylesheet" type="text/css" href="styles/video.css" />
 </head>
 <body>
-	<div class="maingrid">
-		<div class="divheader">
-			<h1><a href="/">HUDSONII ART</a></h1>
-			<h1><a href="photo">PHOTOGRAPHY</a></h1>
-			<h1 class="currentheader"><a href="">VIDEOGRAPHY</a></h1>
-		</div>
-		
-		<header class="gridcell gridheader">
-			<h1>VIDEOGRAPHY</h1>
+	<div class="landpage">
+		<header>
+			<h1><a href="/">hudsonii art</a> &nbsp; &nbsp; <a class="secondary" href="video/birdsonlocation">birds on location</a> &nbsp; &nbsp; <a class="secondary" href="https://www.youtube.com/@westmannaturalists">westman naturalists</a></h1>
 		</header>
-		
-		<div class="gridcell gridlinkbirds">
-			<h1><a href="video/birdsonlocation">BIRDS ON LOCATION</a></h1>
-		</div>
-		
-		<div class="gridcell gridlinkhome">
-			<h1><a href="video/homevideoseries">HOME VIDEO SERIES</a></h1>
-		</div>
-		
-		<div class="gridcell gridlinknaturalists">
-			<h1><a href="updates/westmannaturalists">WESTMAN NATURALISTS</a></h1>
-		</div>
-		
-		<div class="gridcell gridlinklatest">
-			<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-			<iframe id="youtube_video" width="101%" height="100%" frameborder="0"></iframe>
-		</div>
-		
-		<div class="gridcell gridlinkcamp">
-			<h1><a href="video/campingtrips">CAMPING TRIPS</a></h1>
-		</div>
-		
-		<div class="gridcell gridlinkwcgtv">
-			<h1><a href="updates/wcgtv">WCGtv</a></h1>
-		</div>
-		
-		<div class="gridcell gridlinkother">
-			<h1><a href="video/otherseries">OTHER SERIES</a></h1>
-		</div>
-		
-		<footer class="gridcell gridfooter">
-			<div class="divfooter">
-				<h1><a href="about">ABOUT</a></h1>
-				<h1><a href="updates">UPDATES</a></h1>
-				<h1><a href="https://youtube.com/@hudsoniiart">YOUTUBE</a></h1>
-			</div>
-		</footer>
-		
-		<script>
-			// https://stackoverflow.com/questions/18267426/html-auto-embedding-recent-uploaded-videos-from-a-youtube-channel
-			var channelID = "UCSg36rQO4_gJZ1y8AKgFZEg";
-			var reqURL = "https://www.youtube.com/feeds/videos.xml?channel_id=";
-			
-			$.getJSON("https://api.rss2json.com/v1/api.json?rss_url=" + encodeURIComponent(reqURL)+channelID, function(data) {
-				var link = data.items[0].link;
-				var id = link.substr(link.indexOf("=")+1);
-				$("#youtube_video").attr("src","https://youtube.com/embed/"+id + "?controls=0&showinfo=0&rel=0");
-			});
-		</script>
 	</div>
 </body>
 </html>

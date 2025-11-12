@@ -33,7 +33,7 @@
 	grid-column: 2 / 3;
 	grid-row: 3;
 	
-	background: url("../media/frontpage/indexvideo.jpg") no-repeat center;
+	background: url("../media/thumbnails/videoother.jpg") no-repeat center;
 	background-size: cover;
 }
 
