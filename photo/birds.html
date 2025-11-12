@@ -4,63 +4,40 @@
 	<link rel="icon" type="image/png" sizes="16x16" href="../media/favicon/favicon.png">
 	<title>Birds - Hudsonii Art</title>
 	<link rel="stylesheet" type="text/css" href="../styles/hudsoniiart.css" />
-	<link rel="stylesheet" type="text/css" href="../styles/gallery.css" />
 	<style>
-		.landpage {
+		.titlepage {
 			background: url("../media/headers/birds.jpg") no-repeat center;
 			background-size: cover;
 		}
 	</style>
 </header>
 <body>
-	<div class="landpage">
+	<div id="background" class="titlepage">
 		<header>
-			<h1><a href="/">hudsonii art</a> &nbsp; &nbsp; next photo</h1>
+			<h1><a class="primary" href="/">hudsonii art</a> &nbsp; &nbsp; <span id="photoswitch">next photo</span></h1>
 		</header>
 	</div>
 	
 	<script>
-		let ulPhotos;
+		let photoswitch, background;
+		
+		const photobirds = [
+				"ardeaherodias",
+				"asioflammeus", "athenecunicularia","bubovirginianus","strixnebulosa",
+				"lagopusleucura","tympanuchusphasianellus"
+			];
 
 		window.addEventListener("load", function() {
-			ulPhotos = document.getElementById("ulPhotos");
+			photoswitch = document.getElementById("photoswitch");
 			
-			randomizePhotos();
+			photoswitch.addEventListener("click", function() {
+				background = document.getElementById("background");
+				
+				let i = Math.floor(Math.random() * photobirds.length);
+				
+				background.style.backgroundImage = "url('../media/birds/" + photobirds[i] + ".jpg')";
+			});
 		});
-
-		function randomizePhotos() {
-			const srcPhoto = [
-				"1901",
-				"2001","2002","2003","2005","2006","2007",
-				"2102",
-				"2201","2202","2203",
-				"2301","2302","2303","2304","2305","2306","2307","2308","2309","2310","2311","2312","2313","2314","2315","2316","2317","2318",
-				"2401","2402","2403","2404","2405","2406","2407","2408","2409","2410","2411","2412","2413","2414","2415","2416","2417","2418","2419","2420","2421","2422","2423","2424","2425","2426","2427","2428","2429","2430","2431","2432","2433","2434","2435","2436","2437","2438","2439","2440","2441","2442","2443","2444","2445","2446","2447","2448","2449","2450","2451","2452","2453","2454","2455","2456","2457","2458","2459","2460"
-			];
-			
-			// This is the Fisher-Yates Shuffle algorithm. I used the following resource to understand it.
-			// https://bost.ocks.org/mike/shuffle/
-			var m = srcPhoto.length, t, v, i;
-			while(m) {
-				i = Math.floor(Math.random() * m--);
-				t = srcPhoto[m];
-				
-				srcPhoto[m] = srcPhoto[i];
-				srcPhoto[i] = t;
-			}
-			
-			for(let i = 0; i < srcPhoto.length; i++) {
-				var liPhoto = document.createElement("li");
-				
-				var imgPhoto = document.createElement("img");
-				imgPhoto.src = "../media/photo/birds/" + srcPhoto[i] + ".jpg";
-				
-				liPhoto.appendChild(imgPhoto);
-				ulPhotos.appendChild(liPhoto);
-			}
-			
-			ulPhotos.appendChild(document.createElement("li"));
-		}
 	</script>
 </body>
 </html>

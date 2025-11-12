@@ -4,66 +4,39 @@
 	<link rel="icon" type="image/png" sizes="16x16" href="../media/favicon/favicon.png">
 	<title>Not Birds - Hudsonii Art</title>
 	<link rel="stylesheet" type="text/css" href="../styles/hudsoniiart.css" />
-	<link rel="stylesheet" type="text/css" href="../styles/gallery.css" />
 	<style>
-		.landpage {
+		.titlepage {
 			background: url("../media/headers/notbirds.jpg") no-repeat center;
 			background-size: cover;
 		}
 	</style>
 </header>
 <body>
-	<div class="landpage">
+	<div id="background" class="titlepage">
 		<header>
-			<h1><a href="/">hudsonii art</a> &nbsp; &nbsp; next photo</h1>
+			<h1><a class="primary" href="/">hudsonii art</a> &nbsp; &nbsp; <span id="photoswitch">next photo</span></h1>
 		</header>
 	</div>
 	
 	<script>
-		let ulPhotos;
+		let photoswitch, background;
+		
+		const photonot = [
+				"odocoileusvirginianus",
+				"watertonlakes","dorothylake","honeymoonlake"
+			];
 
 		window.addEventListener("load", function() {
-			ulPhotos = document.getElementById("ulPhotos");
+			photoswitch = document.getElementById("photoswitch");
 			
-			randomizePhotos();
+			photoswitch.addEventListener("click", function() {
+				background = document.getElementById("background");
+				
+				let i = Math.floor(Math.random() * photonot.length);
+				
+				background.style.backgroundImage = "url('../media/notbirds/" + photonot[i] + ".jpg')";
+			});
 		});
-
-		function randomizePhotos() {
-			const srcPhoto = [
-				"BCN001","BCN002","BCN003","BCN004",
-				"AWR001","AWR002","AWR004","AWR005","AWR006","AWR007","AWR008","AWR009","AWR010",
-				"AFF001","AFF002","AFF003",
-				"AUR001","AUR003","AUR004","AUR005",
-				"2310A01","2310A02","2310A03","2310A04","2310A06","2310A07","2310A08","2310A09","2310A10",
-				"BRA001","BRA002",
-				"CSI001","CSI003","CSI004","CSI005","CSI006","CSI009","CSI010",
-				"FOR001","FOR002","FOR003","FOR004",
-				"KEN002","KEN003","KEN005",
-				"TGS001","TGS002","TGS003","TGS004","TGS005","TGS007","TGS008","TGS009","TGS010",
-				"WPG001","WPG002","WPG003","WPG004","WPG006"
-			];
-			
-			// This is the Fisher-Yates Shuffle algorithm. I used the following resource to understand it.
-			// https://bost.ocks.org/mike/shuffle/
-			var m = srcPhoto.length, t, v, i;
-			while(m) {
-				i = Math.floor(Math.random() * m--);
-				t = srcPhoto[m];
-				
-				srcPhoto[m] = srcPhoto[i];
-				srcPhoto[i] = t;
-			}
-			
-			for(let i = 0; i < srcPhoto.length; i++) {
-				var liPhoto = document.createElement("li");
-				
-				var imgPhoto = document.createElement("img");
-				imgPhoto.src = "../media/photo/assorted/" + srcPhoto[i] + ".jpg";
-				
-				liPhoto.appendChild(imgPhoto);
-				ulPhotos.appendChild(liPhoto);
-			}
-		}
 	</script>
 </body>
 </html>
