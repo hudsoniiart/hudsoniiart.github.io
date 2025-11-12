@@ -21,9 +21,13 @@
 	<script>
 		let photoswitch, background;
 		
-		const photonot = [
-				"odocoileusvirginianus",
-				"watertonlakes","dorothylake","honeymoonlake"
+		const photos = [
+				"bisonbison","oviscanadensis",
+				"odocoileusvirginianus","odocoileushemionus","cervuscanadensis",
+				"lithobatessylvaticus",
+				"watertonlakes","duckmountain",
+				"dorothylake","honeymoonlake",
+				"hazel","vivi"
 			];
 
 		window.addEventListener("load", function() {
@@ -32,9 +36,9 @@
 			photoswitch.addEventListener("click", function() {
 				background = document.getElementById("background");
 				
-				let i = Math.floor(Math.random() * photonot.length);
+				let i = Math.floor(Math.random() * photos.length);
 				
-				background.style.backgroundImage = "url('../media/notbirds/" + photonot[i] + ".jpg')";
+				background.style.backgroundImage = "url('../media/notbirds/" + photos[i] + ".jpg')";
 			});
 		});
 	</script>

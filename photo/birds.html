@@ -21,8 +21,15 @@
 	<script>
 		let photoswitch, background;
 		
-		const photobirds = [
+		const photos = [
+				"anasplatyrhynchos",
+				"buteoswainsoni","haliaeetusleucocephalus",
 				"ardeaherodias",
+				"arenariainterpres","calidrisalba",
+				"chroicocephalusphiladelphia","larusdelawarensis","sternahirundo",
+				"bartramialongicauda","limnodromusscolopaceus","phalaropustricolor",
+				"columbalivia",
+				"ralluslimicola",
 				"asioflammeus", "athenecunicularia","bubovirginianus","strixnebulosa",
 				"lagopusleucura","tympanuchusphasianellus"
 			];
@@ -33,9 +40,9 @@
 			photoswitch.addEventListener("click", function() {
 				background = document.getElementById("background");
 				
-				let i = Math.floor(Math.random() * photobirds.length);
+				let i = Math.floor(Math.random() * photos.length);
 				
-				background.style.backgroundImage = "url('../media/birds/" + photobirds[i] + ".jpg')";
+				background.style.backgroundImage = "url('../media/birds/" + photos[i] + ".jpg')";
 			});
 		});
 	</script>
