@@ -19,17 +19,29 @@ body, html {
 	text-shadow: 1px 1px 10px #000000;
 }
 
-.titlepage a {
+.titlepage a, .halfpage a {
 	color: #FFFFFF;
 	text-decoration: none;
 }
 
-.titlepage a:visited {
+.titlepage a:visited, .halfpage a:visited {
 	color: #FFFFFF;
 }
 
-.titlepage a:hover {
+.titlepage a:hover, .halfpage a:hover {
 	color: #E0E0E0;
+}
+
+.halfpage {
+	height: 50vh;
+	
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	align-content: center;
+	
+	color: #FFFFFF;
+	text-shadow: 1px 1px 10px #000000;
 }
 
 .primary {
@@ -38,4 +50,13 @@ body, html {
 
 .secondary {
 	font-weight: bold;
+}
+
+.textcontent {
+	text-align: center;
+	margin: 0% 15%;
+}
+
+.textcontent h1 {
+	border-bottom: 2px solid #000000;
 }
