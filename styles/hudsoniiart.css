@@ -60,3 +60,25 @@ body, html {
 .textcontent h1 {
 	border-bottom: 2px solid #000000;
 }
+
+.textcontent ul {
+	list-style-type: none;
+}
+
+.textcontent a, .textcontent a:visited {
+	color: #000000;
+}
+
+.textcontent a:hover {
+	color: #666666;
+}
+
+.topheader {
+	padding-bottom: 0;
+	margin-bottom: 0;
+}
+
+.subheader {
+	padding-top: 0;
+	margin-top: 0;
+}
