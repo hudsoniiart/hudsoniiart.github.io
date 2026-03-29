@@ -2,11 +2,11 @@
 <html>
 <header>
 	<link rel="icon" type="image/png" sizes="16x16" href="../media/favicon/favicon.png">
-	<title>Not Birds - Hudsonii Art</title>
+	<title>Other Photos - Hudsonii Art</title>
 	<link rel="stylesheet" type="text/css" href="../styles/hudsoniiart.css" />
 	<style>
 		.titlepage {
-			background: url("../media/headers/notbirds.jpg") no-repeat center;
+			background: url("../media/headers/other.jpg") no-repeat center;
 			background-size: cover;
 		}
 	</style>
@@ -22,11 +22,9 @@
 		let photoswitch, background;
 		
 		const photos = [
-				"bisonbison","oviscanadensis",
-				"odocoileusvirginianus","odocoileushemionus","cervuscanadensis",
-				"lithobatessylvaticus",
-				"callospermophiluslateralis","cynomysludovicianus","ictidomystridecemlineatus","marmotamonax","neotamiasminimus","sciurusniger","tamiasciurushudsonicus","tamiasstriatus","urocitelluscolumbianus","urocitellusrichardsonii",
-				"hazel","vivi"
+				"watertonlakes","duckmountain","dorothylake","honeymoonlake",
+				"aquaticgap","bathsheba","bridgetown","morganlewis","ricesdrive","speightstown","threehouse",
+				"batiboubay","calibishie","chaudierepool","marigot","scottshead"
 			];
 
 		window.addEventListener("load", function() {
@@ -37,7 +35,7 @@
 				
 				let i = Math.floor(Math.random() * photos.length);
 				
-				background.style.backgroundImage = "url('../media/notbirds/" + photos[i] + ".jpg')";
+				background.style.backgroundImage = "url('../media/other/" + photos[i] + ".jpg')";
 			});
 		});
 	</script>
