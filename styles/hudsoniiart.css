@@ -53,8 +53,8 @@ body, html {
 }
 
 .textcontent {
-	text-align: center;
-	margin: 0% 15%;
+	/* formerly text-align: center; */
+	margin: 0% 25%;
 }
 
 .textcontent h1 {
@@ -81,4 +81,10 @@ body, html {
 .subheader {
 	padding-top: 0;
 	margin-top: 0;
+}
+
+@media screen and (max-width: 900px) {
+	.textcontent {
+		margin: 0% 5%;
+	}
 }
