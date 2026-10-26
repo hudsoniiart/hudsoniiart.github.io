@@ -38,7 +38,8 @@ window.addEventListener("load", function() {
 	photoswitch = document.getElementById("photoswitch");
 	
 	bckgrnd = document.getElementById("background");
-	bckgrnd.style.background = "url('../media/nature/" + photos[i++] + ".jpg') no-repeat center";
+	bckgrnd.style.background = "url('../media/nature/" + photos[i++] + ".jpg') center no-repeat";
+	bckgrnd.style.backgroundSize = "cover";
 	
 	photoswitch.addEventListener("click", function() {
 		bckgrnd = document.getElementById("background");
