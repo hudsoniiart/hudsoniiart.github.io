@@ -61,16 +61,21 @@ header > h1 {
 }
 
 .textcontent {
-	/* formerly text-align: center; */
-	margin: 0% 25%;
+	/* top right bottom left */
+	margin: 0% 20%;
+	padding-bottom: 10px;
 }
 
 .textcontent h1 {
 	border-bottom: 2px solid #000000;
 }
 
-.textcontent ul {
+.nestul {
 	list-style-type: none;
+}
+
+ul ul {
+	list-style-type: "- ";
 }
 
 .textcontent a, .textcontent a:visited {
@@ -98,5 +103,6 @@ header > h1 {
 @media screen and (max-width: 900px) {
 	.textcontent {
 		margin: 0% 5%;
+		padding-bottom: 10px;
 	}
 }
