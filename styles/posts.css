@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+.galcol {
+	display: flex;
+	flex-direction: column;
+	
+	text-align: center;
+	margin: 5px 35%;
+}
+
+img {
+	height: 50%;
+	padding: 10px;
+}
+
+@media screen and (max-width: 900px) {
+	.galcol {
+		margin: 0% 5%;
+		padding-bottom: 10px;
+	}
+}

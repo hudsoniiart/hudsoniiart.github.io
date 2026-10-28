@@ -3,20 +3,22 @@
 let photoswitch, bckgrnd;
 
 const photos = [
-	"caribpurple",
+	"caribpurple","cormorantcrest","cranesand","crowamerican",
 	"deertailed","doveear",
 	"egretcattle",
-	"gracklecarib","grebewestern","gullring",
+	"foxred",
+	"gracklecarib","grebewestern","grouseruff","gullring",
 	"heronblue",
 	"jaycanada",
 	"kingbirdeast",
-	"mallardhen","moosecalf",
+	"magpieblack","mallardhen","moosecalf",
+	"nutcrackerclark",
 	"owlhorn",
-	"pelicanbrown","ptarmiganjasper",
-	"robinamerican",
-	"squirrelcolumbian","squirrellined",
+	"pelicanbrown","pigeonrock","ptarmiganjasper",
+	"ravencommon","robinamerican",
+	"squirrelamerican","squirrelcolumbian","squirrelgolden","squirrellined",
 	"terncommon",
-	"warblerrump",
+	"warblerpalm","warblerrump"
 ];
 
 // This is the Fisher-Yates Shuffle algorithm. I used the following resource to understand it.
