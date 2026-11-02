@@ -35,6 +35,10 @@ header a:hover {
 	color: #E0E0E0;
 }
 
+header > h1 {
+	user-select: none; /* Avoid highlighting when spamming next photo on desktop. */
+}
+
 .photopage {
 	background-color: #333333;
 }
@@ -47,22 +51,34 @@ header a:hover {
 	font-weight: bold;
 }
 
-header > h1 {
-	user-select: none;
-}
-
 .faebutton {
-	cursor: pointer;
+	cursor: pointer; /* Appear like a button. */
 }
 
+/* Styling for textual content such as information. */
 .textcontent {
-	/* top right bottom left */
-	margin: 0% 20%;
+	margin: 0% 20%; /* top right bottom left */
 	padding-bottom: 10px;
 }
 
 .textcontent h1 {
 	border-bottom: 2px solid #000000;
+}
+
+.textcontent h3 {
+	color: #222222;
+}
+
+.textcontent h4 {
+	color: #333333;
+}
+
+.textcontent h3, .textcontent h4 {
+	padding-left: 3px;
+}
+
+.textcontent p {
+	padding-left: 3px;
 }
 
 .nestul {
@@ -95,6 +111,7 @@ ul ul {
 	font-style: italic;
 }
 
+/* Media queries that only sort of work. */
 @media screen and (max-width: 900px) {
 	.textcontent {
 		margin: 0% 5%;
