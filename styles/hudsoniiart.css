@@ -7,9 +7,8 @@ body, html {
 	padding: 0;
 }
 
-.titlepage {
-	height: 100vh;
-	
+/* Styling for various header types. */
+header {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-evenly;
@@ -19,29 +18,25 @@ body, html {
 	text-shadow: 1px 1px 10px #000000;
 }
 
-.titlepage a, .halfpage a {
-	color: #FFFFFF;
-	text-decoration: none;
-}
-
-.titlepage a:visited, .halfpage a:visited {
-	color: #FFFFFF;
-}
-
-.titlepage a:hover, .halfpage a:hover {
-	color: #E0E0E0;
+.titlepage {
+	height: 100vh;
 }
 
 .halfpage {
 	height: 50vh;
-	
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-evenly;
-	align-content: center;
-	
+}
+
+header a, header a:visited {
 	color: #FFFFFF;
-	text-shadow: 1px 1px 10px #000000;
+	text-decoration: none;
+}
+
+header a:hover {
+	color: #E0E0E0;
+}
+
+.photopage {
+	background-color: #333333;
 }
 
 .primary {
